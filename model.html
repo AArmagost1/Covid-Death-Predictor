@@ -61,18 +61,54 @@
         <div class="col-md-8">
           <article class = "description-content">
             <h1 class = "description-header">
-              How did we build our model
+              How did we build our model.
             </h1>
             <hr class="description-hr">
-            <a href="Images/Fig2.png" >
+            <!-- <a href="Images/Fig2.png" >
               <img src="Images/Fig2.png" title="City Latitude vs. Humidity"
             class = "img-responsive">
-            </a>
-            <p>
-              This scatter plot shows that it is difficult to determine a relationship between latitude and Humidity.
-              There are many data points with 100% humidity, and various clusters forming around the 60 to 80 degrees latitude data points. 
+            </a> -->
+            <h4>
+              Logistic Regression
+            </h4>
+            <p> 
+            The highest accuracy score for the logistic regression model were 91% using binary outcomes with no stock data.<br>
+            Before fitting the model, 'unnamed' columns, date columns, and rows with NaN field values were dropped. We also got rid of the Dow Jones data due to datatype issues with values showing up as strings.<br>
+            The target variable was the binary class attribute that describes whether the number of deaths was higher or lower than the mean. The scikit-learn tool test_train_split was used to separate the data into training and testing data. Then the data was scaled using scikit-learn's StandardScaler before fitting the Logistic Regression model.<br>
             </p>
+            <a href="Images/LR-Table.png" >
+              <img src="Images/LR-Table.png" title="Logistic Regression"
+            class = "img-responsive">
+            </a>
+            <h4>
+              SVM
+            </h4>
+            <p>
+              The highest accuracy score for the Support Vector Machine model was 91% using binary outcomes with stock data.<br>
+              The setup was the same as that used for the logistic regression model up until the fitting of the SVM model.
+            </p>
+            <a href="Images/SVM-table.png" >
+              <img src="Images/SVM-table.png" title="Support Vector Machine"
+            class = "img-responsive">
+            </a>
+            <h4>
+              Neural Networks
+            </h4>
+            <p>
+              The highest accuracy score for the Neural Network model was 91% for binary outcomes without stock data. <br>
+              Preprocessing was the same as that for the Logistic Regression and SVM models but also included one-hot encoding of the binary class target variable.<br>
+              Model parameters were initialized with one layer, 50 nodes, and 100 epochs. Activation was ‘relu’ for the input layer and ‘sigmoid’ for the output layer.
+            </p>
+            <a href="Images/NN-table.png" >
+              <img src="Images/NN-table.png" title="Neural Network"
+            class = "img-responsive">
+            </a>
+            <a href="Images/NN-plot.png" >
+              <img src="Images/NN-plot.png" title="Accuracy Plot"
+            class = "img-responsive center"
+            </a>
             
+
           </article>
         </div>
         <div class="col-md-4">
@@ -89,7 +125,7 @@
                 </a>
                 <a href="data.html">
                   <h2 class="comparison-header">What data we used</h2>
-                  <img src="Images/Fig2.png" class = "imageNav-photo" title = "Latitude Vs. Humidity">
+                  <img src="Images/Misc/StarTrekData.jfif" class = "imageNav-photo" title = "Data">
                 </a>
                 <a href="model.html">
                   <h2 class="comparison-header">Model Generation</h2>

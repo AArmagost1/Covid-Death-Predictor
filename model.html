@@ -105,9 +105,46 @@
             </a>
             <a href="Images/NN-plot.png" >
               <img src="Images/NN-plot.png" title="Accuracy Plot"
-            class = "img-responsive center"
+            class = "img-responsive center">
             </a>
-            
+            <h4>
+              Random Forest
+            </h4>
+            <a href="Images/Model/RFC_Model_Summary.png" >
+              <img src="Images/Model/RFC_Model_Summary.png" title="Random Forest Machine"
+            class = "img-responsive">
+            </a>
+            <p>
+              Summary: It was surprising to get such a high degree of accuracy modeling against each of the 4 data sets. <br>
+              However, the Random Forest Models that used the Trend Data with Binary outcomes and the Stock Data with the Multi-Class outcomes out performed their contemporary modeling efforts. 
+            </p>
+            <p>
+              Model 1 Approach-  Used the Google Trend data with Binary outcomes is split into a standard 80/20 test/train split with a random state of 42.<br>
+              The model itself uses a random state of 1 with 500 estimators and yielded a Testing score of 0.9086. <br>
+            </p>
+            <p>
+              Model 1 Findings- One of the most interesting findings and that ultimately turned out to be a consistently important attribute for all the Random Forest Models was the daily data for the Current[ly] Hospitalized COVID-19 Patients. <br>
+              Interestingly enough the second most important feature & also a consistent data feature was from the Google Trend data, “can dogs get covid”. <br>
+              The other top 10 features were from the Google Trend data set (lake, city, peloton, how to get my taste back, covid symptoms, ivermectin, stroke, flu symptoms). <br>
+              The least important features were also from the Google Trend data (stimmy, doritos locos tacos, biden, baconator). 
+            </p>
+            <a href="Images/Model/RFC_Binary_Top_10_Features.png" >
+              <img src="Images/Model/RFC_Binary_Top_10_Features.png" title="RFC Binary Model Attributes"
+            class = "img-responsive">
+            </a>
+            <p>
+              Model 2 Approach-  Used the Google Trend data with Binary outcomes is split into a standard 80/20 test/train split with a random state of 42. <br>
+              Standard Scaling is also applied due to the larger number included in the Stocks Data Set. The model itself uses a random state of 1 with 500 estimators and yielded a Testing score of 0.876. 
+            </p>
+            <p>
+              Model 2 Findings- One of the most interesting findings is that the Current[ly] Hospitalized COVID-19 Patients was again the most important feature . The second most important feature is “covid symptoms”. <br>
+              Top 10 features were from the Google Trend data set: can dogs get covid, lake, quarantine, stimulus, lungs. Top 10 features from the Stock Data Set are the Open & Close Price for Moderna Inc (MRNA). <br>
+              Rounding out the top ten features is the Total Doses Administered. The least important features were also from the Google Trend data (anti-depressant, anxiety, biden, gig economy). 
+            </p>
+            <a href="Images/Model/RFC_Multi_Top_10_Features.png" >
+              <img src="Images/Model/RFC_Multi_Top_10_Features.png" title="RFC Multi Model Attributes"
+            class = "img-responsive">
+            </a>
 
           </article>
         </div>
@@ -125,7 +162,7 @@
                 </a>
                 <a href="data.html">
                   <h2 class="comparison-header">What data we used</h2>
-                  <img src="Images/Misc/StarTrekData.jfif" class = "imageNav-photo" title = "Data">
+                  <img src="Images/Fig2.png" class = "imageNav-photo" title = "Data">
                 </a>
                 <a href="model.html">
                   <h2 class="comparison-header">Model Generation</h2>

@@ -15,7 +15,7 @@ body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
   /* Visual */
-  background-color: #ededed;
+  background-color: rgb(157, 191, 229);
 }
 
 /* Media query for body */
@@ -31,7 +31,7 @@ body {
 
 /* ----NAV START---- */
 .navbar-custom {
-  background-color: #fff;
+  background-color: rgb(71, 108, 195);
 }
 
 #logo {
@@ -47,10 +47,10 @@ body {
   /* Typography */
   font-size: 24px;
   font-weight: bold;
-  color: #fff;
+  color: rgb(142, 241, 60);
 
   /* Visual */
-  background: #4aaaa5;
+  background: #ff0000;
 }
 
 /* Logo hover state */
@@ -81,7 +81,7 @@ body {
 
 /* Nav element hover state */
 .navbar-default .navbar-nav > li > a:hover {
-  color: #4aaaa5;
+  color: #aa4a4a;
 }
 
 /* Media query for nav */

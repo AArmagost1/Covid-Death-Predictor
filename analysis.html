@@ -58,7 +58,7 @@
     <!-- Start of container -->
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-12">
           <article class = "description-content">
             <h1 class = "description-header">
               Final Analysis
@@ -76,6 +76,7 @@
               <br>
               This would help with hospitals ability to prepare in advance for critical resources like staffing, supplies, and beds depending on which bin the model predicted would happen 10 days in the future. 
             </p></h3><br>
+            <hr class='description-hr'>
             <h4><u>Champion Model Summary</u></h4>
             <p>
               <u>Champion Model Approach-</u>  Used the Google Trend data with Binary outcomes is split into a standard 80/20 test/train split with a random state of 42. <br>
@@ -93,32 +94,30 @@
             
           </article>
         </div>
-        <div class="col-md-4">
-          <section id="imageNav-area">
-            <div class="imageNav-content">
-              <h2 class="imageNav-header">
-                Model Journey
-              </h2>
-              <hr>
-              <div id="images">
-                <a href="why.html">
-                  <h2 class="comparison-header">Why we wanted to know</h2>
-                  <img src="Images/Fig1.png" class = "imageNav-photo" title = "Latitude Vs. Max Temperature">
-                </a>
-                <a href="data.html">
-                  <h2 class="comparison-header">What data we used</h2>
-                  <img src="Images/Fig2.png" class = "imageNav-photo" title = "Latitude Vs. Humidity">
-                </a>
-                <a href="model.html">
-                  <h2 class="comparison-header">Model Generation</h2>
-                  <img src="Images/Fig3.png" class = "imageNav-photo" title = "Latitude Vs. Cloudiness">
-                </a>
-                <a href="analysis.html">
-                  <h2 class="comparison-header">Conclusion</h2>
-                  <img src="Images/Fig4.png" class = "imageNav-photo" title = "Latitude Vs. Wind Speed">
-                </a>
+        <div>
+          <div class='container'>
+            <div class='row'>
+              <div class='col-md-12'>
+                <article class='description-content'>
+                  <h1 class = 'description-header'>
+                    Model Limitations and Acknowledgments
+                  </h1>
+                  <hr class='description-hr'>
+                  <p>
+                    <h2><u>Limitations</u></h2><br>
+                    <font size=4>While our initial model findings and predictions are promising, limitations exist with scaling the prediction to end users; with end users being a hospital or organization
+                    that would be able to use the prediction. This is due to, at least in part, to the original data used for defining outcomes from the CDC
+                    being aggregated at the national level.<br>
+                    <br> 
+                    In order to make our predictions more useful we would need to run our model(s) against localized or regional outcome data sets, and compare the predictions. 
+                    This could potential be done by partnering with NGO's or Health Care providers with more granular data. This could also lead to needing more granular Google Trend Search data as well
+                    as other input data sets which could prove challenging.</font>
+                  </p>
+                </article>
               </div>
             </div>
+          </div>
+        </div>
           </section>
         </div>
       </div>

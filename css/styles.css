@@ -104,7 +104,7 @@ body {
 }
 
 .navbar-default .navbar-nav > li > .dropdown-toggle {
-  background-color: rgb(71, 108, 195);
+  background-color: rgb(25, 11, 174);
 }
 
 .navbar-default .navbar-nav > li > .dropdown-menu a{
@@ -115,7 +115,7 @@ body {
 
 /* Nav element hover state */
 .navbar-default .navbar-nav > li > a:hover {
-  color: #1d1183;
+  color: #a1a1ac;
 }
 
 /* Media query for nav */

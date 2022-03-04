@@ -58,7 +58,7 @@
     <!-- Start of container -->
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-12">
           <article class = "description-content">
             <h1 class = "description-header">
               How did we build our model.
@@ -68,9 +68,9 @@
               <img src="Images/Fig2.png" title="City Latitude vs. Humidity"
             class = "img-responsive">
             </a> -->
-            <h4>
+            <h1>
               Logistic Regression
-            </h4>
+            </h1>
             <p> 
             The highest accuracy score for the logistic regression model were 91% using binary outcomes with no stock data.<br>
             Before fitting the model, 'unnamed' columns, date columns, and rows with NaN field values were dropped. We also got rid of the Dow Jones data due to datatype issues with values showing up as strings.<br>
@@ -80,9 +80,20 @@
               <img src="Images/LR-Table.png" title="Logistic Regression"
             class = "img-responsive">
             </a><br>
-            <h4>
-              SVM
-            </h4>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <article class = "description-content">
+        <h1 class = "description-header">
+          SVM
+        </h1>
+        <hr class="description-hr">
             <p>
               The highest accuracy score for the Support Vector Machine model was 91% using binary outcomes with stock data.<br>
               The setup was the same as that used for the logistic regression model up until the fitting of the SVM model.
@@ -91,9 +102,20 @@
               <img src="Images/SVM-table.png" title="Support Vector Machine"
             class = "img-responsive">
             </a><br>
-            <h4>
-              Neural Networks
-            </h4>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <article class = "description-content">
+        <h1 class = "description-header">
+          Neural Networks.
+        </h1>
+        <hr class="description-hr">
             <p>
               The highest accuracy score for the Neural Network model was 91% for binary outcomes without stock data. <br>
               Preprocessing was the same as that for the Logistic Regression and SVM models but also included one-hot encoding of the binary class target variable.<br>
@@ -107,9 +129,20 @@
               <img src="Images/NN-plot.png" title="Accuracy Plot"
             class = "img-responsive center">
             </a><br>
-            <h4>
-              Random Forest
-            </h4>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <article class = "description-content">
+        <h1 class = "description-header">
+          Random Forest
+        </h1>
+        <hr class="description-hr">
             <a href="Images/Model/RFC_Model_Summary.png" >
               <img src="Images/Model/RFC_Model_Summary.png" title="Random Forest Machine"
             class = "img-responsive">
@@ -145,38 +178,15 @@
               <img src="Images/Model/RFC_Multi_Top_10_Features.png" title="RFC Multi Model Attributes"
             class = "img-responsive">
             </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
 
-          </article>
-        </div>
-        <div class="col-md-4">
-          <section id="imageNav-area">
-            <div class="imageNav-content">
-              <h2 class="imageNav-header">
-                Model Journey
-              </h2>
-              <hr>
-              <div id="images">
-                <a href="why.html">
-                  <h2 class="comparison-header">Why we wanted to know</h2>
-                  <img src="Images/Fig1.png" class = "imageNav-photo" title = "Latitude Vs. Max Temperature">
-                </a>
-                <a href="data.html">
-                  <h2 class="comparison-header">What data we used</h2>
-                  <img src="Images/Fig2.png" class = "imageNav-photo" title = "Data">
-                </a>
-                <a href="model.html">
-                  <h2 class="comparison-header">Model Generation</h2>
-                  <img src="Images/Fig3.png" class = "imageNav-photo" title = "Latitude Vs. Cloudiness">
-                </a>
-                <a href="analysis.html">
-                  <h2 class="comparison-header">Conclusion</h2>
-                  <img src="Images/Fig4.png" class = "imageNav-photo" title = "Latitude Vs. Wind Speed">
-                </a>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
+        
+  </div>
     </div>
     <!-- End of container -->
 

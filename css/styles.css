@@ -121,7 +121,7 @@ body {
 /* Media query for nav */
 @media only screen and (max-width: 767px) {
   .navbar-header {
-    background-color: rgb(255, 225, 89);
+    background-color: rgb(53, 232, 232);
   }
 
   #logo {
@@ -139,10 +139,10 @@ body {
     /* Typography */
     font-size: 24px;
     font-weight: bold;
-    color: rgb(255,215,0);
+    color: rgb(34, 0, 255);
 
     /* Visual */
-    background: #5ed40e;
+    background: #7198eb;
   }
 }
 

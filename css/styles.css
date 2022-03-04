@@ -42,7 +42,7 @@ body {
 
   /* Positioning */
   margin-left: 70px;
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: Ver, Times, "Times New Roman", serif;
 
   /* Typography */
   font-size: 24px;
@@ -56,7 +56,7 @@ body {
 /* Logo hover state */
 #logo:hover {
   /* Visual */
-  opacity: 0.7;
+  opacity: 0.65;
 }
 
 .navbar-right-custom {
@@ -65,8 +65,9 @@ body {
   padding-right: 20px;
 
   /* Typography */
-  font-family: Arial;
-  font-weight: lighter;
+  font-family: Verdana;
+  /* font-weight: lighter; */
+  color: rgb(142, 241, 60)
 }
 
 .navbar-left-custom {
@@ -79,15 +80,25 @@ body {
   font-weight: lighter;
 }
 
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #ff0000;
+}
+
+.navbar-default .navbar-nav > li > .dropdown-menu a{
+  color: rgb(142, 241, 60);
+}
+
+
+
 /* Nav element hover state */
 .navbar-default .navbar-nav > li > a:hover {
-  color: #aa4a4a;
+  color: rgb(255,215,0);
 }
 
 /* Media query for nav */
 @media only screen and (max-width: 767px) {
   .navbar-header {
-    background-color: #4aaaa5;
+    background-color: rgb(255,215,0);
   }
 
   #logo {
@@ -100,15 +111,15 @@ body {
 
     /* Positioning */
     margin-left: 0;
-    font-family: Georgia, Times, "Times New Roman", serif;
+    font-family: Verdana, Times, "Times New Roman", serif;
 
     /* Typography */
     font-size: 24px;
     font-weight: bold;
-    color: #fff;
+    color: rgb(255,215,0);
 
     /* Visual */
-    background: #4aaaa5;
+    background: #5ed40e;
   }
 }
 
@@ -118,7 +129,7 @@ body {
 .description-header {
   /* Positioning */
   margin-bottom: 33px;
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: Verdana, Times, "Times New Roman", serif;
 
   /* Typography */
   font-size: 32px;
@@ -194,7 +205,7 @@ body {
 .imageNav-header {
   /* Positioning */
   margin-bottom: 15px;
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: Verdana, Times, "Times New Roman", serif;
 
   /* Typography */
   font-size: 25px;
@@ -237,7 +248,7 @@ body {
 .comparison-header {
   /* Positioning */
   margin-bottom: 10px;
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: Verdana, Times, "Times New Roman", serif;
 
   /* Typography */
   font-size: 20px;
@@ -260,7 +271,7 @@ body {
   margin-top: 30px;
 
   /* Visual */
-  background-color: #666;
+  background-color: rgb(48, 20, 151);
 }
 
 .text-muted-footer {
@@ -268,7 +279,7 @@ body {
   margin-top: 15px;
 
   /* Typography */
-  color: #fff;
+  color: rgb(255, 225, 89);
 }
 
 .two-toned-footer-color {
@@ -277,7 +288,7 @@ body {
   padding-top: 3px;
 
   /* Visual */
-  background-color: #4aaaa5;
+  background-color: rgb(71, 108, 195);
 }
 
 /* ----FOOTER END---- */

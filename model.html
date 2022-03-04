@@ -79,7 +79,7 @@
             <a href="Images/LR-Table.png" >
               <img src="Images/LR-Table.png" title="Logistic Regression"
             class = "img-responsive">
-            </a>
+            </a><br>
             <h4>
               SVM
             </h4>
@@ -90,7 +90,7 @@
             <a href="Images/SVM-table.png" >
               <img src="Images/SVM-table.png" title="Support Vector Machine"
             class = "img-responsive">
-            </a>
+            </a><br>
             <h4>
               Neural Networks
             </h4>
@@ -106,7 +106,7 @@
             <a href="Images/NN-plot.png" >
               <img src="Images/NN-plot.png" title="Accuracy Plot"
             class = "img-responsive center">
-            </a>
+            </a><br>
             <h4>
               Random Forest
             </h4>
@@ -115,15 +115,15 @@
             class = "img-responsive">
             </a>
             <p>
-              Summary: It was surprising to get such a high degree of accuracy modeling against each of the 4 data sets. <br>
+              <u><strong>Summary:</strong></u> It was surprising to get such a high degree of accuracy modeling against each of the 4 data sets. <br>
               However, the Random Forest Models that used the Trend Data with Binary outcomes and the Stock Data with the Multi-Class outcomes out performed their contemporary modeling efforts. 
             </p>
             <p>
-              Model 1 Approach-  Used the Google Trend data with Binary outcomes is split into a standard 80/20 test/train split with a random state of 42.<br>
+              <u>Model 1 Approach-</u> Used the Google Trend data with Binary outcomes is split into a standard 80/20 test/train split with a random state of 42.<br>
               The model itself uses a random state of 1 with 500 estimators and yielded a Testing score of <b>0.9086</b>. <br>
             </p>
             <p>
-              Model 1 Findings- One of the most interesting findings and that ultimately turned out to be a consistently important attribute for all the Random Forest Models was the daily data for the Current[ly] Hospitalized COVID-19 Patients. <br>
+              <u>Model 1 Findings-</u> One of the most interesting findings and that ultimately turned out to be a consistently important attribute for all the Random Forest Models was the daily data for the Current[ly] Hospitalized COVID-19 Patients. <br>
               Interestingly enough the second most important feature & also a consistent data feature was from the Google Trend data, “can dogs get covid”. <br>
               The other top 10 features were from the Google Trend data set (lake, city, peloton, how to get my taste back, covid symptoms, ivermectin, stroke, flu symptoms). <br>
               The least important features were also from the Google Trend data (stimmy, doritos locos tacos, biden, baconator). 
@@ -133,11 +133,11 @@
             class = "img-responsive">
             </a>
             <p>
-              Model 2 Approach-  Used the Google Trend data with Binary outcomes is split into a standard 80/20 test/train split with a random state of 42. <br>
+              <u>Model 2 Approach-</u>  Used the Google Trend data with Binary outcomes is split into a standard 80/20 test/train split with a random state of 42. <br>
               Standard Scaling is also applied due to the larger number included in the Stocks Data Set. The model itself uses a random state of 1 with 500 estimators and yielded a Testing score of <b>0.876</b>. 
             </p>
             <p>
-              Model 2 Findings- One of the most interesting findings is that the Current[ly] Hospitalized COVID-19 Patients was again the most important feature . The second most important feature is “covid symptoms”. <br>
+              <u>Model 2 Findings-</u> One of the most interesting findings is that the Current[ly] Hospitalized COVID-19 Patients was again the most important feature . The second most important feature is “covid symptoms”. <br>
               Top 10 features were from the Google Trend data set: can dogs get covid, lake, quarantine, stimulus, lungs. Top 10 features from the Stock Data Set are the Open & Close Price for Moderna Inc (MRNA). <br>
               Rounding out the top ten features is the Total Doses Administered. The least important features were also from the Google Trend data (anti-depressant, anxiety, biden, gig economy). 
             </p>

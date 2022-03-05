@@ -185,6 +185,36 @@
     </div>
   </div>
 </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <article class = "description-content">
+        <h1 class = "description-header">
+          K-Nearest Neighbor
+        </h1>
+        <hr class="description-hr">
+            <p>
+              <u>Model Findings</u>The highest accuracy score for the KNN model was <b>89%</b> using the binary class outcomes with no stock data and a k-value of 11.<br>
+              Initially before fitting the model, the ‘unnamed’ columns, date columns, and rows with Null values were dropped. Unfortunately we had to drop our DOW <br>
+              Jones data due to a data-typing issue. The target variable for our model was the binary class attribute that describes whether the number of deaths was <br>
+              higher or lower than the mean. We used the test_train_split function from the scikit-learn package to separate the data into training and testing data.<br>
+              Then the data was scaled using the StandardScaler function before fitting the KNN model. 
+
+            </p>
+            <a href="Images/KNN-plot.png" >
+              <img src="Images/KNN-plot.png" title="KNN Accuracy Plot"
+            class = "img-responsive">
+            </a>
+            <p>
+              The chart above shows how the accuracy score of of our models and the corresponding k-value. 
+            </p>
+          <br>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
 
         
   </div>

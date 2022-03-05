@@ -104,7 +104,7 @@ body {
 }
 
 .navbar-default .navbar-nav > li > .dropdown-toggle {
-  background-color:  rgb(231, 228, 241)
+  background-color: rgb(25, 11, 174);
 }
 
 .navbar-default .navbar-nav > li > .dropdown-menu a{
@@ -115,13 +115,13 @@ body {
 
 /* Nav element hover state */
 .navbar-default .navbar-nav > li > a:hover {
-  color: #1d1183;
+  color: #a1a1ac;
 }
 
 /* Media query for nav */
 @media only screen and (max-width: 767px) {
   .navbar-header {
-    background-color: rgb(255, 225, 89);
+    background-color: rgb(53, 232, 232);
   }
 
   #logo {
@@ -139,10 +139,10 @@ body {
     /* Typography */
     font-size: 24px;
     font-weight: bold;
-    color: rgb(255,215,0);
+    color: rgb(34, 0, 255);
 
     /* Visual */
-    background: #5ed40e;
+    background: #7198eb;
   }
 }
 

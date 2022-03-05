@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Bootstrap Visualization Dashboard</title>
+    <title>Covid-19 Prediction</title>
 
     <!-- Boostrap Stylesheet -->
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
@@ -30,8 +30,8 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <div class="col-xs-9 phone-nav">
-              <a class="navbar-brand" href="index.html" id="logo">Covid-19 Prediction</a>
+            <div class="col-xs-14 phone-nav">
+              <a class="navbar-brand" href="index.html" id="logo">Home Page</a>
             </div>
           </div>
 
@@ -67,13 +67,27 @@
             <hr class="description-hr">
             <a href="Images/Model/hospital.jpeg" >
               <img src="Images/Model/hospital.jpeg" title="hospital"
-            class = "img-responsive">
-            </a>
-            <p>
+            class = "center">
+            </a><br>
+            <font size=5><p>
               Given the overwhelming importance and impact COVID-19 has had on all of us over the past 24 months we wanted to find a way to help. One of the ways we wanted to explore this is by investigating whether or not we could help constrained or limited resources fighting on the front line of the virus, like Hospitals. <br>
-              We have repeatedly seen that hospitals and more importantly hospital staff have been constantly over capacity in dealing with sick and dying patients. Our goal was to see if we could provide them a time buffer to predict surges to help them prepare. 
-            </p>
-
+              <br>
+              We have repeatedly seen that hospitals and more importantly hospital staff have been constantly over capacity in dealing with sick and dying patients. Our goal is to see if we could provide them a time buffer to predict surges to help them prepare.
+              This ideally would increased patient care and outcomes leading to a lower death rate. <br>
+              <br>
+              The figure below shows the relationship between number of patients hospitalized with COVID-19 and the death rate. 
+              There is generally a positive corrulation between high numbers of COVID-19 patients and deaths. <br>
+              <a href="Images/Model/New_death_v_patients.png" >
+                <img src="Images/Model/New_death_v_patients.png" title="New Deaths v Patients"
+              class = "center">
+              </a><br>
+              Interestingly enough, direct corrulation cannot be drawn when comparing vaccination rates (millions) and deaths due
+              to COVID-19. The figure below shows this relationship between New Deaths and number of vaccines administered. 
+            </p></font>
+            <a href="Images/Model/New Deaths v Total Doses Administered (millions).png" >
+              <img src="Images/Model/New Deaths v Total Doses Administered (millions).png" title="New Deaths v Millions of Vaccines Administered"
+            class = "center">
+            </a><br>
           </article>
           </div>
       </div>
@@ -84,7 +98,7 @@
     <footer class="footer navbar-fixed-bottom">
       <div class="two-toned-footer-color"></div>
       <p class="text-muted text-muted-footer text-center">
-        <b>&copy; Copyright Coding Bootcamp 2022</b>
+        <b>&copy; Copyright 2022</b>
       </p>
     </footer>
     <!-- End of footer -->

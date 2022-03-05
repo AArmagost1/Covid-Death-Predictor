@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Bootstrap Visualization Dashboard</title>
+    <title>Covid-19 Prediction</title>
 
     <!-- Boostrap Stylesheet -->
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
@@ -31,7 +31,7 @@
               <span class="icon-bar"></span>
             </button>
             <div class="col-xs-14 phone-nav">
-              <a class="navbar-brand" href="index.html" id="logo">Covid-19 Prediction</a>
+              <a class="navbar-brand" href="index.html" id="logo">Home Page</a>
             </div>
           </div>
 
@@ -58,125 +58,136 @@
     <!-- Start of container -->
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-12">
           <article class = "description-content">
             <h1 class = "description-header">
-              How did we build our model.
+              Which models did we use in our assessment?
             </h1>
             <hr class="description-hr">
-            <!-- <a href="Images/Fig2.png" >
-              <img src="Images/Fig2.png" title="City Latitude vs. Humidity"
-            class = "img-responsive">
-            </a> -->
-            <h4>
+            <article class = "description-content">
+            <h1 class = "description-header">
               Logistic Regression
-            </h4>
+            </h1>
+            <hr class="description-hr">
             <p> 
-            The highest accuracy score for the logistic regression model were 91% using binary outcomes with no stock data.<br>
-            Before fitting the model, 'unnamed' columns, date columns, and rows with NaN field values were dropped. We also got rid of the Dow Jones data due to datatype issues with values showing up as strings.<br>
+            The highest accuracy score for the logistic regression model was 91% using binary outcomes with no stock data. <br><br>
+            Before fitting the model, 'unnamed' columns, date columns, and rows with NaN field values were dropped. We also got rid of the Dow Jones data due to datatype issues with values showing up as strings.<br><br>
             The target variable was the binary class attribute that describes whether the number of deaths was higher or lower than the mean. The scikit-learn tool test_train_split was used to separate the data into training and testing data. Then the data was scaled using scikit-learn's StandardScaler before fitting the Logistic Regression model.<br>
             </p>
             <a href="Images/LR-Table.png" >
               <img src="Images/LR-Table.png" title="Logistic Regression"
             class = "img-responsive">
             </a><br>
-            <h4>
-              SVM
-            </h4>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <article class = "description-content">
+        <h1 class = "description-header">
+          SVM
+        </h1>
+        <hr class="description-hr">
             <p>
-              The highest accuracy score for the Support Vector Machine model was 91% using binary outcomes with stock data.<br>
+              The highest accuracy score for the Support Vector Machine model was 91% using binary outcomes with stock data.<br><br>
               The setup was the same as that used for the logistic regression model up until the fitting of the SVM model.
             </p>
             <a href="Images/SVM-table.png" >
               <img src="Images/SVM-table.png" title="Support Vector Machine"
             class = "img-responsive">
             </a><br>
-            <h4>
-              Neural Networks
-            </h4>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <article class = "description-content">
+        <h1 class = "description-header">
+          Neural Networks
+        </h1>
+        <hr class="description-hr">
             <p>
-              The highest accuracy score for the Neural Network model was 91% for binary outcomes without stock data. <br>
-              Preprocessing was the same as that for the Logistic Regression and SVM models but also included one-hot encoding of the binary class target variable.<br>
-              Model parameters were initialized with one layer, 50 nodes, and 100 epochs. Activation was ‘relu’ for the input layer and ‘sigmoid’ for the output layer.
+              The highest accuracy score for the Neural Network model was 91% for binary outcomes without stock data. <br><br>Preprocessing was the same as that for the Logistic Regression and SVM models but also included one-hot encoding of the target variable.<br><br>
+              Model parameters were initialized with one layer, 50 'hidden' neurons, and 100 epochs. Activation was ‘relu’ for the input layer and ‘sigmoid’ for the output layer.
+            </p>
+            <a href="Images/NN-plot.png" >
+              <img src="Images/NN-plot.png" title="Accuracy Plot"
+            class = "img-responsive center">
+            </a>
+            <p>
+              The chart above shows how the accuracy score of the training data leveled off after about 20 epochs. 
             </p>
             <a href="Images/NN-table.png" >
               <img src="Images/NN-table.png" title="Neural Network"
             class = "img-responsive">
             </a>
-            <a href="Images/NN-plot.png" >
-              <img src="Images/NN-plot.png" title="Accuracy Plot"
-            class = "img-responsive center">
-            </a><br>
-            <h4>
-              Random Forest
-            </h4>
+          <br>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <article class = "description-content">
+        <h1 class = "description-header">
+          Random Forest
+        </h1>
+        <hr class="description-hr">
             <a href="Images/Model/RFC_Model_Summary.png" >
               <img src="Images/Model/RFC_Model_Summary.png" title="Random Forest Machine"
             class = "img-responsive">
             </a>
             <p>
               <u><strong>Summary:</strong></u> It was surprising to get such a high degree of accuracy modeling against each of the 4 data sets. <br>
-              However, the Random Forest Models that used the Trend Data with Binary outcomes and the Stock Data with the Multi-Class outcomes out performed their contemporary modeling efforts. 
+              However, the Random Forest Models that used the Trend Data with Binary outcomes <i>(Model 1)</i> and the Stock Data with the Multi-Class outcomes <i>(Model 4)</i> out performed their contemporary modeling efforts. 
             </p>
             <p>
               <u>Model 1 Approach-</u> Used the Google Trend data with Binary outcomes is split into a standard 80/20 test/train split with a random state of 42.<br>
               The model itself uses a random state of 1 with 500 estimators and yielded a Testing score of <b>0.9086</b>. <br>
             </p>
             <p>
-              <u>Model 1 Findings-</u> One of the most interesting findings and that ultimately turned out to be a consistently important attribute for all the Random Forest Models was the daily data for the Current[ly] Hospitalized COVID-19 Patients. <br>
-              Interestingly enough the second most important feature & also a consistent data feature was from the Google Trend data, “can dogs get covid”. <br>
-              The other top 10 features were from the Google Trend data set (lake, city, peloton, how to get my taste back, covid symptoms, ivermectin, stroke, flu symptoms). <br>
+              <u>Model 1 Findings-</u> One of the most interesting findings and that ultimately turned out to be a consistently important attribute for all the Random Forest Models was the daily data for the Current[ly] Hospitalized COVID-19 Patients.
+              Interestingly enough the second most important feature & also a consistent data feature was from the Google Trend data, “can dogs get covid”.
+              The other top 10 features were from the Google Trend data set (lake, city, peloton, how to get my taste back, covid symptoms, ivermectin, stroke, flu symptoms).
               The least important features were also from the Google Trend data (stimmy, doritos locos tacos, biden, baconator). 
             </p>
             <a href="Images/Model/RFC_Binary_Top_10_Features.png" >
               <img src="Images/Model/RFC_Binary_Top_10_Features.png" title="RFC Binary Model Attributes"
-            class = "img-responsive">
+            class = "center">
             </a>
             <p>
-              <u>Model 2 Approach-</u>  Used the Google Trend data with Binary outcomes is split into a standard 80/20 test/train split with a random state of 42. <br>
+              <u>Model 4 Approach-</u>  Used the Google Trend data with Binary outcomes is split into a standard 80/20 test/train split with a random state of 42. <br>
               Standard Scaling is also applied due to the larger number included in the Stocks Data Set. The model itself uses a random state of 1 with 500 estimators and yielded a Testing score of <b>0.876</b>. 
             </p>
             <p>
-              <u>Model 2 Findings-</u> One of the most interesting findings is that the Current[ly] Hospitalized COVID-19 Patients was again the most important feature . The second most important feature is “covid symptoms”. <br>
-              Top 10 features were from the Google Trend data set: can dogs get covid, lake, quarantine, stimulus, lungs. Top 10 features from the Stock Data Set are the Open & Close Price for Moderna Inc (MRNA). <br>
+              <u>Model 4 Findings-</u> One of the most interesting findings is that the Current[ly] Hospitalized COVID-19 Patients was again the most important feature . The second most important feature is “covid symptoms”.
+              Top 10 features were from the Google Trend data set: can dogs get covid, lake, quarantine, stimulus, lungs. Top 10 features from the Stock Data Set are the Open & Close Price for Moderna Inc (MRNA).
               Rounding out the top ten features is the Total Doses Administered. The least important features were also from the Google Trend data (anti-depressant, anxiety, biden, gig economy). 
             </p>
             <a href="Images/Model/RFC_Multi_Top_10_Features.png" >
               <img src="Images/Model/RFC_Multi_Top_10_Features.png" title="RFC Multi Model Attributes"
-            class = "img-responsive">
+            class = "center">
             </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
 
-          </article>
-        </div>
-        <div class="col-md-4">
-          <section id="imageNav-area">
-            <div class="imageNav-content">
-              <h2 class="imageNav-header">
-                Model Journey
-              </h2>
-              <hr>
-              <div id="images">
-                <a href="why.html">
-                  <h2 class="comparison-header">Why we wanted to know</h2>
-                  <img src="Images/Fig1.png" class = "imageNav-photo" title = "Latitude Vs. Max Temperature">
-                </a>
-                <a href="data.html">
-                  <h2 class="comparison-header">What data we used</h2>
-                  <img src="Images/Fig2.png" class = "imageNav-photo" title = "Data">
-                </a>
-                <a href="model.html">
-                  <h2 class="comparison-header">Model Generation</h2>
-                  <img src="Images/Fig3.png" class = "imageNav-photo" title = "Latitude Vs. Cloudiness">
-                </a>
-                <a href="analysis.html">
-                  <h2 class="comparison-header">Conclusion</h2>
-                  <img src="Images/Fig4.png" class = "imageNav-photo" title = "Latitude Vs. Wind Speed">
-                </a>
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
+        
+  </div>
     </div>
     <!-- End of container -->
 
@@ -184,7 +195,7 @@
     <footer class="footer navbar-fixed-bottom">
       <div class="two-toned-footer-color"></div>
       <p class="text-muted text-muted-footer text-center">
-        <b>&copy; Copyright Coding Bootcamp 2022</b>
+        <b>&copy; Copyright 2022</b>
       </p>
     </footer>
     <!-- End of footer -->
